@@ -1,0 +1,60 @@
+.dish-card-container {
+display: flex;
+justify-content: center;
+gap: 55px;
+}
+
+@media (max-width: 801px) {
+    .dish-card-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 75px;
+    }
+}
+
+@media (max-width: 415px) {
+    .dish-card-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.dish-cards {
+    width: 250px;
+    height: 450px;
+    border-radius: 12px;
+    background-color: #D9D9D9;
+}
+
+.dish-card-img img {
+    height: 250px;
+    width: 250px;
+    border-radius: 12px;
+}
+
+.dish-card-head-context {
+    display: flex;
+    justify-content: space-around;
+}
+
+.dish-card-head-context h3 {
+    font-weight: 700;
+}
+
+.dish-card-head-context p {
+    color: #D21D1D;
+}
+
+.dish-card-context > p {
+    margin-top: 0;
+    margin-left: 15px;
+    color: #000000;
+}
+
+.dish-card-context > button {
+    background: none;
+    border: none;
+    font-weight: 700;
+    margin-left: 15px;
+    cursor: pointer;
+}

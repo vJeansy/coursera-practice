@@ -1,0 +1,23 @@
+[
+    {
+        "tittle": "Gllek Salad",
+        "Picture": "../Assest/greek salad.jpg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus eros vel suscipit faucibus. Aenean vestibulum dignissim nisl.",
+        "price": 2.99,
+        "type": "Salad"
+    },
+    {
+        "tittle": "Lemon dessert",
+        "Picture": "../Assest/lemon dessert.jpg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus eros vel suscipit faucibus. Aenean vestibulum dignissim nisl.",
+        "price": 7.99,
+        "type": "Dessert"
+    },
+    {
+        "tittle": "Goyitos",
+        "Picture": "../Assest/restauranfood.jpg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus eros vel suscipit faucibus. Aenean vestibulum dignissim nisl.",
+        "price": 12.99,
+        "type": "FastFood"
+    }
+]
