@@ -1,0 +1,38 @@
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 125px;
+    padding-top: 75px;
+    background-color: #FBDABB;
+    height: 300px;
+}
+
+footer > img {
+    height: 200px;
+    width: auto;
+}
+
+nav {
+    list-style: none;
+    cursor: pointer;
+}
+
+.nav-title {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+footer .nav-link {
+    margin: 10px;
+}
+
+@media (max-width: 415px) {
+    footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1px;
+        align-items: center;
+        height: 500px;
+        padding: 45px;
+    }
+}
