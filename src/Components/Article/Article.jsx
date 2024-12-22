@@ -19,8 +19,8 @@ export const Article = () => {
                         Aenean vestibulum dignissim nisl.</p>
                 </div>
                 <div className="article-img">
-                    <img src="./Assest/restauranfood.jpg" alt="restaurantfood" />
-                    <img src="./Assest/restauranfood2.jpg" alt="restauranfood2" />
+                    <img src="https://github.com/vJeansy/coursera-practice/blob/main/public/Assest/restauranfood.jpg?raw=true" alt="restaurantfood" />
+                    <img src="https://github.com/vJeansy/coursera-practice/blob/main/public/Assest/restauranfood2.jpg?raw=true" alt="restauranfood2" />
                 </div>
             </div>
         </div>

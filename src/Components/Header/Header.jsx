@@ -1,4 +1,5 @@
 import { PrimaryButton } from "../Buttons/PrimaryButton"
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
     return (
@@ -11,11 +12,11 @@ export const Header = () => {
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing
                 elit. Donec maximus eros vel suscipit faucibus.
                 Aenean vestibulum dignissim nisl.</p>
-                <PrimaryButton
-                text='Reserve a table' />
+                <Link to="/Reservation"><PrimaryButton
+                text='Reserve a table' /></Link>
             </div>
             <div className="header-img">
-                <img src="../Assest/Mario and Adrian A.jpg" alt="Mario and Adrian A" />
+                <img src="https://github.com/vJeansy/coursera-practice/blob/main/public/Assest/Mario and Adrian A.jpg?raw=true" alt="Mario and Adrian A" />
             </div>
             </div>
         </header>

@@ -5,7 +5,9 @@
 }
 
 form {
-    background-color: rgba(172, 172, 172, 0.205);
+    background-image: url(https://littlelemon.cyruscsc.com/images/littlelemon-og-image.jpg);
+    background-repeat: repeat;
+    background-size:contain;
     border-radius: 15px;
     display: grid;
     width: 700px;
@@ -17,7 +19,7 @@ form {
 
 form h2 {
     font-size: 2.5rem;
-    color: #495E57;
+    color: #141414;
 }
 
 input {

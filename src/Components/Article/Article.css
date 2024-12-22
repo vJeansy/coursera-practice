@@ -27,6 +27,7 @@
 .article-img img {
     height: 400px;
     width: 250px;
+    box-shadow: rgba(23, 22, 22, 0.7) 8px 9px 9px 0;
 }
 
 .article-img img:nth-of-type(2) {

@@ -5,7 +5,7 @@ export const DishesCards = () => {
 const [restaurants, setRestaurants] = useState([]);
 
 useEffect(() => {
-fetch ('../Json/Specials.json')
+fetch ('./Json/Specials.json')
 .then((response) => response.json())
 .then((data) => setRestaurants(data))
 .catch((error) => console.log("Error fetching dishes:", error));
