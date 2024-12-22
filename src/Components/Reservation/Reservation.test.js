@@ -1,4 +1,5 @@
 import { render, screen, fireEvent, waitFor, within } from "@testing-library/react";
+import '@testing-library/jest-dom/jest-globals'
 import { ReservationForm } from "./ReservationForm";
 
 //Mock fetchAPI function.
@@ -73,6 +74,26 @@ describe('ReservationForm', () => {
         const options = within(timeSelect).getAllByRole('option');
         expect(options).toHaveLength(1);
     });
+    test('alert "Your reservation has been received!" when valid form submitted', () => {
+
+        window.alert = jest.fn(); // Mock window.alert
+
+        render(<ReservationForm />);
+
+        //choosing date
+        const dateInput = screen.getByLabelText('Choose date');
+        fireEvent.change(dateInput, { target: { value: '2023-12-21' } });
+
+        //choosing time
+        const timeSelect = screen.getByLabelText('Choose time');
+        fireEvent.change(timeSelect, { target: {time: "17:00"} });
+
+        // submitting form
+        const submitForm = screen.getByTestId('submit-form');
+        fireEvent.click(submitForm);
+
+        expect(window.alert).toHaveBeenCalledWith('Your reservation has been received!');
+    })
     test('handles API error when fetching times', async () => {
         window.fetchAPI.mockRejectedValueOnce(new Error('API Error'));
     });

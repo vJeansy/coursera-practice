@@ -36,3 +36,11 @@ label {
     font-weight: 700;
     font-size: 1.5rem;
 }
+
+.reservation-form input:invalid {
+    border-radius: 2px solid red;
+}
+
+.reservation-form input:valid {
+    border-radius: 2px solid green;
+}
