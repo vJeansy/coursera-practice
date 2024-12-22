@@ -34,7 +34,7 @@
     margin: -85px;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 441px) {
     .article-img img {
         height: 120px;
         width: auto;

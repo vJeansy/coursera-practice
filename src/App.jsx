@@ -9,6 +9,7 @@ import './Components/Buttons/PrimaryButton.css';
 import './App.css';
 import { MenuPage } from './Pages/MenuPage';
 import { ReservationPage } from './Pages/ReservationPage';
+import { OrderOnlinePage } from './Pages/OrderOnlinePage';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
     <Route path='/About' element={<About />} />
     <Route path='/Menu' element={<MenuPage />} />
     <Route path='/Reservation' element={<ReservationPage />} />
+    <Route path='/Order online' element={<OrderOnlinePage />} />
     </Routes>
   );
 }

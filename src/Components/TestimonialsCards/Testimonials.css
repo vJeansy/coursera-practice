@@ -4,7 +4,7 @@
     margin-top: 100px;
     box-shadow: rgba(23, 22, 22, 0.7) 8px 9px 9px 0;
 }
-@media (max-width: 415px) {
+@media (max-width: 441px) {
     .testimonials-body-container {
         height: 1075px;
     }
@@ -22,7 +22,7 @@
     margin-top: 55px;
     gap: 50px;
 }
-@media (max-width: 415px) {
+@media (max-width: 441px) {
     .testimonals {
         display: block;
         justify-items: center;
@@ -48,11 +48,14 @@
     box-shadow: rgba(23, 22, 22, 0.7) 8px 9px 9px 0;
 }
 .testimonial-card-container p {
+    display: flex;
     text-align: center;
     justify-content: center;
+    align-items: center;
     background-color: aliceblue;
     border-radius: 15px;
     height: 50px;
+    box-shadow: rgba(23, 22, 22, 0.7) 8px 9px 9px 0;
 }
 
 .testimonial-card-body {
