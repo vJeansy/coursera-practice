@@ -2,6 +2,7 @@
     background-color: #495E57;
     height: 500px;
     margin-top: 100px;
+    box-shadow: rgba(23, 22, 22, 0.7) 8px 9px 9px 0;
 }
 @media (max-width: 415px) {
     .testimonials-body-container {
@@ -31,15 +32,27 @@
 .testimonial-rating {
     margin-top: 35px;
     margin-left: 25px;
+    transition: all 0.3s;
+}
+
+.testimonial-rating:hover {
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 .testimonial-card-container {
     height: 250px;
     width: 250px;
     background-color: #EE9972;
+    border-radius: 25px;
+    box-shadow: rgba(23, 22, 22, 0.7) 8px 9px 9px 0;
 }
 .testimonial-card-container p {
-    margin-left: 25px;
+    text-align: center;
+    justify-content: center;
+    background-color: aliceblue;
+    border-radius: 15px;
+    height: 50px;
 }
 
 .testimonial-card-body {
@@ -53,4 +66,6 @@
 }
 .testimonial-card-body img {
     height: 55px;
+    border-radius: 25px;
+    box-shadow: rgba(23, 22, 22, 0.5) 5px 5px 5px 0;
 }

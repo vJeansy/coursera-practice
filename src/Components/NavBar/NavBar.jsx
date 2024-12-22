@@ -29,7 +29,7 @@ export const NavBar = () => {
           {/* Desktop Navbar */}
           {!isMobile && (
             <nav className="navegation-bar">
-              <img src="../Assest/logo.jpg" alt="logo" />
+              <Link to ="/"><img src="https://github.com/vJeansy/coursera-practice/blob/main/public/Assest/logo.jpg?raw=true" alt="logo" /></Link>
               <Link to="/" className="nav-link">HOME</Link>
               <Link to="/About" className="nav-link">ABOUT</Link>
               <Link to="/Menu" className="nav-link">MENU</Link>
@@ -42,7 +42,7 @@ export const NavBar = () => {
           {/* Mobile Navbar */}
           {isMobile && (
             <nav className="mobile-navegation-bar">
-              <img src="../Assest/logo.jpg" alt="logo" />
+              <Link to ="/"><img src="https://github.com/vJeansy/coursera-practice/blob/main/public/Assest/logo.jpg?raw=true" alt="logo" /></Link>
               <div className="burguer-icon" onClick={toggleSidebar} role="button">
                 <div className="b-icon"></div>
                 <div className="b-icon"></div>
@@ -52,7 +52,7 @@ export const NavBar = () => {
               {/* Mobile Sidebar */}
               {isSidebarOpen && (
                 <aside className="mobile-sidebar">
-                <img src="../Assest/close btn.jpg" alt="close btn" onClick={toggleSidebar} role="button" />
+                <img src="https://github.com/vJeansy/coursera-practice/blob/main/public/Assest/close btn.jpgraw=true" alt="close btn" onClick={toggleSidebar} role="button" />
               <Link to="/" className="nav-link">HOME</Link>
               <Link to="/About" className="nav-link">ABOUT</Link>
               <Link to="/Menu" className="nav-link">MENU</Link>

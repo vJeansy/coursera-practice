@@ -1,21 +1,21 @@
 [
     {
         "tittle": "Gllek Salad",
-        "Picture": "../Assest/greek salad.jpg",
+        "Picture": "https://github.com/vJeansy/coursera-practice/blob/main/public/Assest/greek salad.jpg?raw=true",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus eros vel suscipit faucibus. Aenean vestibulum dignissim nisl.",
         "price": 2.99,
         "type": "Salad"
     },
     {
         "tittle": "Lemon dessert",
-        "Picture": "../Assest/lemon dessert.jpg",
+        "Picture": "https://github.com/vJeansy/coursera-practice/blob/main/public/Assest/lemon dessert.jpg?raw=true",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus eros vel suscipit faucibus. Aenean vestibulum dignissim nisl.",
         "price": 7.99,
         "type": "Dessert"
     },
     {
         "tittle": "Goyitos",
-        "Picture": "../Assest/restauranfood.jpg",
+        "Picture": "https://github.com/vJeansy/coursera-practice/blob/main/public/Assest/restauranfood.jpg?raw=true",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus eros vel suscipit faucibus. Aenean vestibulum dignissim nisl.",
         "price": 12.99,
         "type": "FastFood"

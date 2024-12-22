@@ -14,7 +14,6 @@ footer > img {
 
 nav {
     list-style: none;
-    cursor: pointer;
 }
 
 .nav-title {
@@ -22,8 +21,18 @@ nav {
     font-size: 1.4rem;
 }
 
-footer .nav-link {
+footer nav .nav-link,
+footer nav .nav-link Link{
+    display: block;
+    cursor: pointer;
     margin: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+footer nav .nav-link:hover,
+footer nav .nav-link Link:hover{
+    color: #495E57;
 }
 
 @media (max-width: 415px) {
