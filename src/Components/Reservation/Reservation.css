@@ -1,37 +1,53 @@
 .reservation-container {
+    background-image: url(https://github.com/vJeansy/coursera-practice/blob/main/public/Assest/restaurant.jpg?raw=true);
+    background-repeat: repeat;
+    background-size:contain;
     display: flex;
     justify-content: center;
     margin: 100px 0 100px 0;
 }
 
 form {
-    background-image: url(https://littlelemon.cyruscsc.com/images/littlelemon-og-image.jpg);
-    background-repeat: repeat;
-    background-size:contain;
     border-radius: 15px;
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
     width: 700px;
-    height: 575px;
+    height: 400px;
     gap: 20px;
-    text-align: center;
     padding: 100px 25px 100px 25px;
 }
 
-form h2 {
-    font-size: 2.5rem;
-    color: #141414;
+form label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: #495E57 9px 9px 9px 0;
+    background-color: #EDEFEE;
+    color: #495E57;
+}
+
+.reser h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    color: #EDEFEE;
+    background-color: #495E57;
+    border-radius: 7px;
 }
 
 input {
     text-align: center;
     border-radius: 5px;
     font-size: 1.2rem;
+    box-shadow: #495E57 9px 9px 9px 0;
 }
 
 select {
     text-align: center;
     border-radius: 5px;
     font-size: 1.2rem;
+    box-shadow: #495E57 9px 9px 9px 0;
 }
 
 label {
@@ -45,4 +61,46 @@ label {
 
 .reservation-form input:valid {
     border-radius: 2px solid green;
+}
+
+.submit-form-btn {
+    margin-top: 25px;
+    border: none;
+    height: 38px;
+    width: auto;
+    border-radius: 8px;
+    background-color: #F4CE14;
+    color: #495E57;
+    font-weight: 700;
+}
+
+.submit-form-btn:hover{
+    background-color: #d4b516;
+    cursor: pointer;
+}
+
+@media (max-width: 441px) {
+    form,
+    label,
+    input,
+    select,
+    .submit-form-btn,
+    .reservation-container {
+        display:block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: auto;
+        margin-bottom: 35px;
+    }
+
+    select,
+    input,
+    .submit-form-btn {
+        width: 350px;
+        height: 45px;
+    }
+    .reser {
+        padding-bottom: 100px;
+    }
 }

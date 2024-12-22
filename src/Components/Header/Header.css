@@ -76,8 +76,8 @@ header p {
     }
 }
 
-@media (max-width: 415px) {
+@media (max-width: 441px) {
     header {
-        height: 450px;
+        height: 500px;
     }
 }

@@ -8,7 +8,7 @@ export const ReservationForm = () => {
     const [selectedDate, setSelectedDate] = useState('');
     const [loading, setLoading] = useState(false);  // To handle loading state
     const [selectedTime, setSelectedTime] = useState('');
-    const [numberOfGuests, setNumberOfGuests] = useState(1);
+    const [numberOfGuests, setNumberOfGuests] = useState(0);
     const [occasion, setOccasion] = useState('Select an occasion');
 
     // Fetch available times when the component mounts or when selectedDate changes
@@ -40,11 +40,11 @@ useEffect(() => {
     };
 
     const handleGuestsChange = (event) => {
-        setSelectedTime(parseInt(event.target.value, 10))
+        setNumberOfGuests(parseInt(event.target.value, 10))
     };
 
     const handleOccasionChange  = (event) => {
-        setSelectedTime(event.target.value)
+        setOccasion(event.target.value)
     };
 
     //clearForm
@@ -52,8 +52,8 @@ useEffect(() => {
         setSelectedDate('');
         setAvailableTimes([]);
         setSelectedTime('');
-        setNumberOfGuests(1);
-        setOccasion('Birthday');
+        setNumberOfGuests(0);
+        setOccasion('Select an occasion');
         setLoading(false);
     }
 
@@ -95,8 +95,9 @@ useEffect(() => {
     }
 
     return (
+        <div className='reser'>
+        <h2>Reservation</h2>
         <form className='reservation-form' onSubmit={handleSubmitButton}>
-            <h2>Book a table</h2>
             <label htmlFor="res-date">Choose date</label>
             <input
                 type="date"
@@ -141,9 +142,11 @@ useEffect(() => {
                 <option>Anniversary</option>
             </select>
             <input
+            className='submit-form-btn'
             type="submit"
             value="Make Your reservation"
             data-testid="submit-form" />
         </form>
+        </div>
     );
 };

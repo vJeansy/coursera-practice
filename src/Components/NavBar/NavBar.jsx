@@ -8,8 +8,8 @@ export const NavBar = () => {
 
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth < 415);
-            if (window.innerWidth >= 415) {
+            setIsMobile(window.innerWidth < 441);
+            if (window.innerWidth >= 441) {
                 setIsSidebarOpen(false); // Close sidebar when switching to desktop
               }
         };
@@ -34,7 +34,7 @@ export const NavBar = () => {
               <Link to="/About" className="nav-link">ABOUT</Link>
               <Link to="/Menu" className="nav-link">MENU</Link>
               <Link to="/Reservation" className="nav-link">RESERVATION</Link>
-              <Link to="" className="nav-link">ORDER ONLINE</Link>
+              <Link to="/Order online" className="nav-link">ORDER ONLINE</Link>
               <Link to="" className="nav-link">LOG IN</Link>
             </nav>
           )}
@@ -52,12 +52,12 @@ export const NavBar = () => {
               {/* Mobile Sidebar */}
               {isSidebarOpen && (
                 <aside className="mobile-sidebar">
-                <img src="https://github.com/vJeansy/coursera-practice/blob/main/public/Assest/close btn.jpgraw=true" alt="close btn" onClick={toggleSidebar} role="button" />
+                <img src="https://github.com/vJeansy/coursera-practice/blob/main/public/Assest/close btn.jpg?raw=true" alt="close btn" onClick={toggleSidebar} role="button" />
               <Link to="/" className="nav-link">HOME</Link>
               <Link to="/About" className="nav-link">ABOUT</Link>
               <Link to="/Menu" className="nav-link">MENU</Link>
               <Link to="/Reservation" className="nav-link">RESERVATION</Link>
-              <Link to="" className="nav-link">ORDER ONLINE</Link>
+              <Link to="/Order online" className="nav-link">ORDER ONLINE</Link>
               <Link to="" className="nav-link">LOG IN</Link>
                 </aside>
               )}

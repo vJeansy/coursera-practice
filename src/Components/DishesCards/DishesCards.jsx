@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import { Link } from "react-router-dom";
 import '../DishesCards/DishesCards.css'
 
 export const DishesCards = () => {
@@ -25,7 +26,7 @@ return(
                 <p>${restaurant.price}</p>
                 </div>
                 <p>{restaurant.description}</p>
-                <button type="button">Order a Delivery</button>
+                <Link to="/Order online"><button type="button">Order a Delivery</button></Link>
             </div>
         </div>
     </div>

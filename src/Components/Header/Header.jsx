@@ -9,9 +9,11 @@ export const Header = () => {
             <div className="header-text">
                 <h1>Little Lemon</h1>
                 <h4>Chicago</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit. Donec maximus eros vel suscipit faucibus.
-                Aenean vestibulum dignissim nisl.</p>
+                <p>Nestled in the heart of the city,
+                    Little Lemon is a family-owned
+                    Mediterranean restaurant dedicated
+                    to bringing a slice of sunshine to
+                    your dining experience.</p>
                 <Link to="/Reservation"><PrimaryButton
                 text='Reserve a table' /></Link>
             </div>

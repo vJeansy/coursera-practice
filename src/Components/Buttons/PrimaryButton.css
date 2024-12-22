@@ -4,11 +4,12 @@
     width: 185px;
     border-radius: 8px;
     background-color: #F4CE14;
-    color: #EDEFEE;
+    color: #495E57;
+    font-weight: 700;
+    font-size: 1.2rem;
 }
 
 .primary-button:hover {
-    color: #f0f0f0;
     background-color: #d4b516;
     cursor: pointer;
 }

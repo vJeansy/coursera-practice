@@ -35,7 +35,7 @@ footer nav .nav-link Link:hover{
     color: #495E57;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 441px) {
     footer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
