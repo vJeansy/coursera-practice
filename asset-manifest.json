@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/coursera-practice/static/css/main.ecab7557.css",
-    "main.js": "/coursera-practice/static/js/main.f3cbf84f.js",
+    "main.css": "/coursera-practice/static/css/main.f5d378dd.css",
+    "main.js": "/coursera-practice/static/js/main.ad41bb4c.js",
     "static/js/453.ad6eb26e.chunk.js": "/coursera-practice/static/js/453.ad6eb26e.chunk.js",
     "index.html": "/coursera-practice/index.html",
-    "main.ecab7557.css.map": "/coursera-practice/static/css/main.ecab7557.css.map",
-    "main.f3cbf84f.js.map": "/coursera-practice/static/js/main.f3cbf84f.js.map",
+    "main.f5d378dd.css.map": "/coursera-practice/static/css/main.f5d378dd.css.map",
+    "main.ad41bb4c.js.map": "/coursera-practice/static/js/main.ad41bb4c.js.map",
     "453.ad6eb26e.chunk.js.map": "/coursera-practice/static/js/453.ad6eb26e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ecab7557.css",
-    "static/js/main.f3cbf84f.js"
+    "static/css/main.f5d378dd.css",
+    "static/js/main.ad41bb4c.js"
   ]
 }
