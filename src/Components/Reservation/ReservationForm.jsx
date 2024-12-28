@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { fetchAPI } from '../../Utils/api';
-
+import { useNavigate } from 'react-router-dom';
 
 export const ReservationForm = () => {
     // State for available times and selected date
@@ -10,6 +10,7 @@ export const ReservationForm = () => {
     const [selectedTime, setSelectedTime] = useState('');
     const [numberOfGuests, setNumberOfGuests] = useState(0);
     const [occasion, setOccasion] = useState('Select an occasion');
+    const navigate = useNavigate();
 
     // Fetch available times when the component mounts or when selectedDate changes
 useEffect(() => {
@@ -48,14 +49,14 @@ useEffect(() => {
     };
 
     //clearForm
-    const clearForm = () => {
+    /* const clearForm = () => {
         setSelectedDate('');
         setAvailableTimes([]);
         setSelectedTime('');
         setNumberOfGuests(0);
         setOccasion('Select an occasion');
         setLoading(false);
-    }
+    } */
 
     //handle submitButton
     const handleSubmitButton = (e) => {
@@ -90,8 +91,16 @@ useEffect(() => {
                     return;
                 }
 
-        alert("Your reservation has been received!");
-        clearForm();
+                navigate('/Reservation/Confirm reservation', {
+                    state: {
+                        reservationDetails: {
+                            date: selectedDate,
+                            time: selectedTime,
+                            guests: numberOfGuests,
+                            occasion: occasion
+                        }
+                    }
+                });
     }
 
     return (
